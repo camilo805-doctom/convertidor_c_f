@@ -1,0 +1,40 @@
+#Convertidor
+
+#Entrada de usuario que pide un grado en celsius
+usuario=int(input("Ingrese un numero en grado celsius: "))
+
+#comprueba la entrada de usuario
+while True:
+
+    #realiza la operacion si el numero es correcto
+    if usuario:
+
+        print("la operacion a grados faherenheit es", usuario*9/5+32)
+
+    #invalida la operacion si el numero no esta en el rango
+    if usuario==0:
+
+        print("el grado es invalido digite otro")
+
+    #Invalida la operacion si el numero no cumple el rango
+    if usuario>=100:
+
+        print("se pasa del rango de los grados celsius por favor digite otro numero")
+
+
+    #Nueva entrada para preguntar si se desea seguir con el programa
+    usuario=str(input("¿Desea seguir con la conversion? "))
+
+    #comprueba la entrada de usuario
+    if usuario=="No":
+        
+        #si la entrada es correcta cierra el programa
+        print("Hasta la proxima conversion")
+        break
+    
+    # Si el usuario desea seguir con el programa volvera a la pregunta inicial
+    else:
+        print("seguimos con la conversion")
+
+
+        usuario=int(input("Ingrese un numero en grado celsius: "))
